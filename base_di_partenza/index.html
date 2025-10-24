@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium Clone</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <div class="navbar__logo">
+            <a href="/" class="logo">
+              <img
+                src="assets/imgs/svg/logo.svg"
+                alt="Medium"
+                class="logo__img"
+              />
+            </a>
+          </div>
+
+          <!-- Right side: Menu + Actions -->
+          <div class="navbar__right">
+            <!-- Desktop Menu -->
+            <ul class="navbar__menu">
+              <li><a href="#" class="navbar__link">Our Story</a></li>
+              <li><a href="#" class="navbar__link">Membership</a></li>
+              <li><a href="#" class="navbar__link">Write</a></li>
+              <li><a href="#" class="navbar__link">Sign In</a></li>
+            </ul>
+
+            <!-- Actions -->
+            <div class="navbar__actions">
+              <!-- Mobile Sign In (hidden on desktop) -->
+              <button class="btn btn--text navbar__mobile-signin">
+                Sign In
+              </button>
+              <button class="btn btn--primary" id="getStartedBtn">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__title">Stay curious.</h1>
+              <p class="hero__subtitle">
+                Discover stories, thinking, and expertise from writers on any
+                topic.
+              </p>
+              <button class="btn btn--hero">Start reading</button>
+            </div>
+            <div class="hero__animation">
+              <!-- SVG delle "M" verrà aggiunto dopo -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDING SECTION -->
+      <section class="trending">
+        <div class="container">
+          <!-- Trending Header -->
+          <div class="trending__header">
+            <img
+              src="assets/imgs/svg/trending.svg"
+              alt="Trending"
+              class="trending__icon"
+            />
+            <h2 class="trending__title">TRENDING ON MEDIUM</h2>
+          </div>
+
+          <!-- Trending Articles -->
+          <div class="trending__articles">
+            <article class="trending__article">
+              <span class="trending__number">01</span>
+              <div class="trending__content">
+                <div class="trending__author">
+                  <img
+                    src="assets/imgs/image01.jpeg"
+                    alt="Tom Cooper"
+                    class="trending__avatar"
+                  />
+                  <span class="trending__name">Tom Cooper</span>
+                </div>
+                <h3 class="trending__article-title">
+                  Ukraine War, 23 October 2022
+                </h3>
+                <div class="trending__meta">
+                  <span class="trending__date">Oct 23</span>
+                  <span class="trending__read-time">5 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="trending__article">
+              <span class="trending__number">02</span>
+              <div class="trending__content">
+                <div class="trending__author">
+                  <img
+                    src="assets/imgs/image02.png"
+                    alt="Arthur Hayes"
+                    class="trending__avatar"
+                  />
+                  <span class="trending__name">Arthur Hayes</span>
+                  <span class="trending__in">in</span>
+                  <span class="trending__publication"
+                    >Entrepreneur's Handbook</span
+                  >
+                </div>
+                <h3 class="trending__article-title">Comeback</h3>
+                <div class="trending__meta">
+                  <span class="trending__date">Oct 26</span>
+                  <span class="trending__read-time">24 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="trending__article">
+              <span class="trending__number">03</span>
+              <div class="trending__content">
+                <div class="trending__author">
+                  <img
+                    src="assets/imgs/image03.jpeg"
+                    alt="Tom Cooper"
+                    class="trending__avatar"
+                  />
+                  <span class="trending__name">Tom Cooper</span>
+                </div>
+                <h3 class="trending__article-title">
+                  How I Learned to Love My Breasts Even Though One Is A Horcrux
+                  For Voldemort
+                </h3>
+                <div class="trending__meta">
+                  <span class="trending__date">Oct 26</span>
+                  <span class="trending__read-time">2 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="trending__article">
+              <span class="trending__number">04</span>
+              <div class="trending__content">
+                <div class="trending__author">
+                  <img
+                    src="assets/imgs/image04.png"
+                    alt="Frank Mastropolo"
+                    class="trending__avatar"
+                  />
+                  <span class="trending__name">Frank Mastropolo</span>
+                  <span class="trending__in">in</span>
+                  <span class="trending__publication">The Riff</span>
+                </div>
+                <h3 class="trending__article-title">
+                  The Night Paul McCartney Donned a Disguise at Fillmore East
+                </h3>
+                <div class="trending__meta">
+                  <span class="trending__date">Oct 22</span>
+                  <span class="trending__read-time">3 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="trending__article">
+              <span class="trending__number">05</span>
+              <div class="trending__content">
+                <div class="trending__author">
+                  <img
+                    src="assets/imgs/image05.jpeg"
+                    alt="Frank Andrade"
+                    class="trending__avatar"
+                  />
+                  <span class="trending__name">Frank Andrade</span>
+                  <span class="trending__in">in</span>
+                  <span class="trending__publication"
+                    >Towards Data Science</span
+                  >
+                </div>
+                <h3 class="trending__article-title">
+                  5 Python Projects to Automate Your Life: From Beginner to
+                  Advanced
+                </h3>
+                <div class="trending__meta">
+                  <span class="trending__date">Oct 13</span>
+                  <span class="trending__read-time">6 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="trending__article">
+              <span class="trending__number">06</span>
+              <div class="trending__content">
+                <div class="trending__author">
+                  <img
+                    src="assets/imgs/image06.png"
+                    alt="Wesley Smits"
+                    class="trending__avatar"
+                  />
+                  <span class="trending__name">Wesley Smits</span>
+                  <span class="trending__in">in</span>
+                  <span class="trending__publication"
+                    >JavaScript in Plain English</span
+                  >
+                </div>
+                <h3 class="trending__article-title">
+                  How To Make Visual Studio Code Look Amazing
+                </h3>
+                <div class="trending__meta">
+                  <span class="trending__date">Oct 20</span>
+                  <span class="trending__read-time">7 min read</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISCOVER MORE SECTION -->
+      <section class="discover">
+        <div class="container">
+          <h2 class="discover__title">DISCOVER MORE OF WHAT MATTERS TO YOU</h2>
+          <div class="discover__tags">
+            <a href="#" class="discover__tag">Programming</a>
+            <a href="#" class="discover__tag">Data Science</a>
+            <a href="#" class="discover__tag">Technology</a>
+            <a href="#" class="discover__tag">Self Improvement</a>
+            <a href="#" class="discover__tag">Writing</a>
+            <a href="#" class="discover__tag">Relationships</a>
+            <a href="#" class="discover__tag">Machine Learning</a>
+            <a href="#" class="discover__tag">Productivity</a>
+            <a href="#" class="discover__tag">Politics</a>
+          </div>
+
+          <!-- Separator Line -->
+          <div class="discover__separator"></div>
+
+          <!-- Footer Links -->
+          <div class="discover__footer-links">
+            <a href="#" class="discover__footer-link">Help</a>
+            <a href="#" class="discover__footer-link">Status</a>
+            <a href="#" class="discover__footer-link">Writers</a>
+            <a href="#" class="discover__footer-link">Blog</a>
+            <a href="#" class="discover__footer-link">Careers</a>
+            <a href="#" class="discover__footer-link">Privacy</a>
+            <a href="#" class="discover__footer-link">Terms</a>
+            <a href="#" class="discover__footer-link">About</a>
+            <a href="#" class="discover__footer-link">Knowable</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content wrapper for desktop 2-column layout -->
+      <div class="content-wrapper">
+        <!-- MAIN ARTICLES SECTION -->
+        <section class="articles">
+          <div class="container">
+            <div class="articles__grid">
+              <!-- Article 1 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image07.jpeg"
+                      alt="Robert Roy Britt"
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name">Robert Roy Britt</span>
+                  </div>
+                  <h2 class="article__title">How Old is Old?</h2>
+                  <p class="article__description">
+                    The answer to that question has changed over the centuries
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Nov 11</span>
+                    <span class="article__read-time">4 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text">Health</span>
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img src="assets/imgs/image08.jpeg" alt="How Old is Old?" />
+                </div>
+              </article>
+
+              <!-- Article 2 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image09.jpeg"
+                      alt="Jenna Scherer"
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name">Jenna Scherer</span>
+                  </div>
+                  <h2 class="article__title">
+                    Is Taylor Swift Allowed to Speak About Fat?
+                  </h2>
+                  <p class="article__description">
+                    Her documentary shows the scary side of female fame
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Oct 26</span>
+                    <span class="article__read-time">4 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text">Pop Culture</span>
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img
+                    src="assets/imgs/image10.jpeg"
+                    alt="Is Taylor Swift Allowed to Speak About Fat?"
+                  />
+                </div>
+              </article>
+
+              <!-- Article 3 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image11.jpeg"
+                      alt="David Rodenas, Ph. D."
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name"
+                      >David Rodenas, Ph. D.</span
+                    >
+                  </div>
+                  <h2 class="article__title">
+                    Don't Screw Up, You Will Be Found Guilty
+                  </h2>
+                  <p class="article__description">
+                    Software Engineer, yours is the right to produce
+                    high-quality work at all times...
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Oct 15</span>
+                    <span class="article__read-time">5 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text"
+                        >Software Engineering</span
+                      >
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img
+                    src="assets/imgs/image12.png"
+                    alt="Don't Screw Up, You Will Be Found Guilty"
+                  />
+                </div>
+              </article>
+
+              <!-- Article 4 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image13.png"
+                      alt="Microsoft Design"
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name">Microsoft Design</span>
+                  </div>
+                  <h2 class="article__title">Leave No Trace</h2>
+                  <p class="article__description">
+                    How product designers can break from the status quo and help
+                    our planet
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Oct 25</span>
+                    <span class="article__read-time">11 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text">Sustainability</span>
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img src="assets/imgs/image14.png" alt="Leave No Trace" />
+                </div>
+              </article>
+
+              <!-- Article 5 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image15.png"
+                      alt="Elizabeth Tobey"
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name">Elizabeth Tobey</span>
+                  </div>
+                  <h2 class="article__title">
+                    What Happens When Everyone Stops Reading Books
+                  </h2>
+                  <p class="article__description">
+                    We might be about to find out
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Oct 24</span>
+                    <span class="article__read-time">4 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text">Literacy</span>
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img
+                    src="assets/imgs/image16.jpeg"
+                    alt="What Happens When Everyone Stops Reading Books"
+                  />
+                </div>
+              </article>
+
+              <!-- Article 6 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image17.jpeg"
+                      alt="Eris Delphi"
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name">Eris Delphi</span>
+                  </div>
+                  <h2 class="article__title">
+                    What I Overheard as an Escape Room Actor
+                  </h2>
+                  <p class="article__description">
+                    Scenes from a minimum-wage performance
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Oct 22</span>
+                    <span class="article__read-time">5 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text">Work</span>
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img
+                    src="assets/imgs/image18.jpeg"
+                    alt="What I Overheard as an Escape Room Actor"
+                  />
+                </div>
+              </article>
+
+              <!-- Article 7 -->
+              <article class="article">
+                <div class="article__content">
+                  <div class="article__author">
+                    <img
+                      src="assets/imgs/image19.jpeg"
+                      alt="Kim Scott"
+                      class="article__avatar"
+                    />
+                    <span class="article__author-name">Kim Scott</span>
+                  </div>
+                  <h2 class="article__title">
+                    6 Steps for Setting Measurable Goals to Avoid "Productivity
+                    Paranoia"
+                  </h2>
+                  <p class="article__description">
+                    With more people working in remote and hybrid environments
+                    than ever before...
+                  </p>
+                  <div class="article__meta">
+                    <span class="article__date">Oct 24</span>
+                    <span class="article__read-time">6 min read</span>
+                    <span class="article__category">
+                      <span class="article__category-text">Health</span>
+                      <img
+                        src="assets/imgs/svg/star.svg"
+                        alt="Star"
+                        class="article__star"
+                      />
+                    </span>
+                    <button
+                      class="article__bookmark"
+                      aria-label="Bookmark article"
+                    >
+                      <img
+                        src="assets/imgs/svg/bookmark.svg"
+                        alt="Bookmark"
+                        class="article__bookmark-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="article__image">
+                  <img
+                    src="assets/imgs/image20.jpg"
+                    alt="6 Steps for Setting Measurable Goals"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- DISCOVER MORE SECTION (Sidebar on desktop) -->
+        <section class="discover discover--sidebar">
+          <div class="container">
+            <h2 class="discover__title">
+              DISCOVER MORE OF WHAT MATTERS TO YOU
+            </h2>
+            <div class="discover__tags">
+              <a href="#" class="discover__tag">Programming</a>
+              <a href="#" class="discover__tag">Data Science</a>
+              <a href="#" class="discover__tag">Technology</a>
+              <a href="#" class="discover__tag">Self Improvement</a>
+              <a href="#" class="discover__tag">Writing</a>
+              <a href="#" class="discover__tag">Relationships</a>
+              <a href="#" class="discover__tag">Machine Learning</a>
+              <a href="#" class="discover__tag">Productivity</a>
+              <a href="#" class="discover__tag">Politics</a>
+            </div>
+
+            <!-- Separator Line -->
+            <div class="discover__separator"></div>
+
+            <!-- Footer Links -->
+            <div class="discover__footer-links">
+              <a href="#" class="discover__footer-link">Help</a>
+              <a href="#" class="discover__footer-link">Status</a>
+              <a href="#" class="discover__footer-link">Writers</a>
+              <a href="#" class="discover__footer-link">Blog</a>
+              <a href="#" class="discover__footer-link">Careers</a>
+              <a href="#" class="discover__footer-link">Privacy</a>
+              <a href="#" class="discover__footer-link">Terms</a>
+              <a href="#" class="discover__footer-link">About</a>
+              <a href="#" class="discover__footer-link">Knowable</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
